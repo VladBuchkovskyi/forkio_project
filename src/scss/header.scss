@@ -1,0 +1,142 @@
+@import "variables";
+
+.header{
+  background-image: url('../img/banner.png');
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+  &-info{
+    text-align: center;
+    &__title{
+      font-size: 82px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: capitalize;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 80px;
+    }
+    &__description{
+      font-size: 30px;
+      font-family: 'Lato', sans-serif;
+      color: $prim-color;
+      margin-top: 20px;
+    }
+    &__version{
+      font-size: 16px;
+      color: #848E97;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+  }
+}
+.navigation{
+  position: relative;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 145px;
+    & li{
+      margin-right: 48px;
+    }
+    & a{
+      font-family: 'Montserrat', sans-serif;
+      color: $prim-color;
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: capitalize;
+      text-decoration: none;
+      transition: 0.3s;
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__name{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: $prim-color;
+    text-transform: uppercase;
+    transition: 0.3s;
+    &:hover{
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+  &__picture{
+    background-image: url('../img/logo.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 17px;
+    width: 43px;
+    height: 41px;
+    transition: 0.3s;
+    &:hover{
+      cursor: pointer;
+      background-image: url('../img/logo-hover.png');
+    }
+  }
+}
+
+
+.buy-button{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  padding: 11px 40px;
+  border-radius: 40px;
+  background-color: $prim-color;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s;
+  &:hover{
+    color: $prim-color;
+    background-color: #fff;
+  }
+}
+.download{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 85%);
+  &-button{
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: $prim-color;
+    padding: 23px 61px;
+    border-radius: 40px;
+    border: 2px solid $prim-color;
+    transition: 0.3s;
+    &:hover{
+      color: $prim-color;
+      background-color: #fff;
+    }
+  }
+  &-description{
+    color: #848E97;
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-top: 42px;
+  }
+}
