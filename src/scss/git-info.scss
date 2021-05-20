@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+//font-family: 'PT Sans', sans-serif;
+
+.git-info{
+  padding-top: 130px;
+  padding-bottom: 70px;
+  &__heading{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 54px;
+    font-weight: 700;
+    color: #635C73;
+    margin-bottom: 35px;
+  }
+  &__description{
+    text-align: center;
+    width: 870px;
+    margin: 0 auto 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    line-height: 1.5;
+    color: #323232;
+
+  }
+  &__actions{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & li{
+      border: 1px solid #d1d5da;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+.action{
+  display: flex;
+  align-items: center;
+  &__type{
+    padding: 3px 12px;
+    display: flex;
+    align-items: center;
+    background-color: #f6f8fa;
+    border-radius: 4px 0 0 4px;
+    border-right: 1px solid #d1d5da;
+    transition: 0.3s;
+    &:hover{
+      cursor: pointer;
+      background-color: #e1e4e8;
+    }
+  }
+  &__name{
+    margin-left: 5px;
+    border-radius: 5px;
+    border-end-start-radius: 5px;
+  }
+  &__amount{
+    padding: 3px 12px;
+  }
+}
